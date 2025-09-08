@@ -15,8 +15,37 @@ export const portfolioData = {
     email: "khanmdmonis45@gmail.com",
     github: "https://github.com/themonis",
     linkedin: "https://www.linkedin.com/in/mohd-monis-khan/",
+    whatsapp: "919753799418",
   },
 
+  education: [
+    {
+      degree:
+        "Bachelor of Technology in Computer Science and Engineering (Cyber Security)",
+      institution: "Sagar Institute of Science and Technology (SISTec), Bhopal",
+      duration: "2022 - 2026 (Expected)",
+      location: "Bhopal, Madhya Pradesh, India",
+
+      relevantCourses: [
+        "Data Structures & Algorithms",
+        "Database Management Systems",
+        "Software Engineering",
+        "Web Technologies",
+        "Computer Networks",
+        "Cybersecurity Fundamentals",
+        "Operating Systems",
+        "Cloud Computing",
+        "Cryptography & Network Security",
+      ],
+      achievements: [
+        "Consistently maintained strong academic performance",
+        "Recognized for participation in cybersecurity-focused coursework",
+        "Selected electives aligning with full-stack development and security",
+      ],
+      description:
+        "Currently in 7th semester, specializing in Cyber Security while building expertise in full-stack web development. Actively involved in technical communities, hackathons, and leadership roles, balancing academics with hands-on projects.",
+    },
+  ],
   skills: {
     frontend: [
       "React",
@@ -185,7 +214,7 @@ export const portfolioData = {
         "An AI-powered Chrome extension that detects phishing attempts using OpenAI API, VirusTotal integration, and pattern-based analysis for real-time protection.",
       longDescription:
         "PhishGuard Pro revolutionizes web security by combining artificial intelligence with proven security databases. The extension analyzes URLs in real-time using multiple detection mechanisms: AI-powered content analysis via OpenAI API, threat intelligence from VirusTotal, and custom pattern matching algorithms. It provides instant alerts and detailed threat assessments to protect users from phishing, malware, and suspicious websites.",
-      image: "/images/projects/phishguard.png",
+      image: "/images/achievements/phishguardpro.png",
       technologies: [
         "JavaScript",
         "Chrome Extension API",

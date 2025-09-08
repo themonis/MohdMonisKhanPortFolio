@@ -10,6 +10,7 @@ import FloatingContact from "./components/FloatingContact/FloatingContact";
 import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 import CustomCursor from "./components/CustomCursor/CustomCursor";
 import Achievements from "./components/Achievements/Achievements";
+import Education from "./components/Education/Education";
 import { useState } from "react";
 import { useEffect } from "react";
 import { portfolioData } from "./data/portfolio";
@@ -54,8 +55,10 @@ function App() {
         <Hero data={portfolioData} />
         <About data={portfolioData} />
         <Skills data={portfolioData} />
-        <Achievements data={portfolioData}></Achievements>
+        <Education></Education>
+
         <Projects data={portfolioData} />
+        <Achievements data={portfolioData}></Achievements>
         <Contact data={portfolioData} />
       </main>
 

@@ -10,7 +10,7 @@ import {
   ChevronUp,
   Sparkles,
 } from "lucide-react";
-
+import { BsWhatsapp } from "react-icons/bs";
 const Footer = ({ data }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -21,7 +21,7 @@ const Footer = ({ data }) => {
       icon: Github,
       href: data?.contact?.github,
       label: "GitHub",
-      color: "hover:text-gray-300",
+      color: "hover:text-gray-400",
     },
     {
       icon: Linkedin,
@@ -34,6 +34,14 @@ const Footer = ({ data }) => {
       href: `mailto:${data?.contact?.email}`,
       label: "Email",
       color: "hover:text-red-400",
+    },
+    {
+      icon: BsWhatsapp,
+      href: data?.contact?.whatsapp
+        ? `https://wa.me/${data.contact.whatsapp.replace(/[^\d]/g, "")}`
+        : "#",
+      label: "Whatsapp",
+      color: " hover:text-green-600",
     },
   ];
 

@@ -14,6 +14,7 @@ import {
   Sparkles,
   Loader,
 } from "lucide-react";
+import { BsWhatsapp } from "react-icons/bs";
 
 const Contact = ({ data }) => {
   const [formData, setFormData] = useState({
@@ -86,25 +87,35 @@ const Contact = ({ data }) => {
       icon: Mail,
       label: "Email",
       value: data?.contact?.email || "your.email@example.com",
-      href: `mailto:${data?.contact?.email}`,
+      href: `mailto:${data?.contact?.email || "your.email@example.com"}`,
       color: "from-red-500 to-pink-500",
       description: "Best way to reach me",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "@themonis",
-      href: data?.contact?.github,
+      value: data?.contact?.githubUsername || "@themonis",
+      href: data?.contact?.github || "#",
       color: "from-gray-600 to-gray-800",
       description: "Check out my repositories",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "mohd-monis-khan",
-      href: data?.contact?.linkedin,
+      value: data?.contact?.linkedinUsername || "mohd-monis-khan",
+      href: data?.contact?.linkedin || "#",
       color: "from-blue-500 to-blue-600",
       description: "Let's connect professionally",
+    },
+    {
+      icon: BsWhatsapp,
+      label: "WhatsApp",
+      value: data?.contact?.whatsapp || "1234567890",
+      href: data?.contact?.whatsapp
+        ? `https://wa.me/${data.contact.whatsapp.replace(/[^\d]/g, "")}`
+        : "#",
+      color: "from-green-500 to-emerald-500",
+      description: "Chat with me on WhatsApp",
     },
     {
       icon: MapPin,

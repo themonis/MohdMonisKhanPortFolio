@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Github, Linkedin, Plus, X } from "lucide-react";
+import { BsWhatsapp } from "react-icons/bs";
+import { main } from "framer-motion/client";
 
 const FloatingContact = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +26,14 @@ const FloatingContact = ({ data }) => {
       href: data?.contact?.github || "#",
       label: "GitHub",
       color: "from-gray-600 to-gray-800",
+    },
+    {
+      icon: BsWhatsapp,
+      href: data?.contact?.whatsapp
+        ? `https://wa.me/${data.contact.whatsapp.replace(/\D/g, "")}`
+        : "#",
+      label: "WhatsApp",
+      color: "from-green-500 to-green-600",
     },
   ];
 
