@@ -39,7 +39,10 @@ const Contact = ({ data }) => {
     setStatus({ type: "loading", message: "Sending message..." });
 
     const formDataToSend = new FormData();
-    formDataToSend.append("access_key", "255ffad9-daac-4d99-b3d2-85a0eae7cef0"); // Get from web3forms.com
+    formDataToSend.append(
+      "access_key",
+      process.env.REACT_APP_WEB3FORMS_ACCESS_KEY
+    ); // Get from web3forms.com
     formDataToSend.append("name", formData.name);
     formDataToSend.append("email", formData.email);
     formDataToSend.append("subject", formData.subject);
