@@ -18,6 +18,21 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem("darkMode");
+    if (savedTheme === null) {
+      // First visit - set to light mode
+      localStorage.setItem("darkMode", JSON.stringify(false));
+      document.documentElement.classList.remove("dark");
+    } else {
+      const isDark = JSON.parse(savedTheme);
+      if (isDark) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    }
+  }, []);
+  useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000); // Show loading screen for 2.5 seconds
