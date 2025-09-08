@@ -12,6 +12,7 @@ import {
   Award,
   Trophy,
   Star,
+  GraduationCap,
 } from "lucide-react";
 import { portfolioData } from "../../data/portfolio";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
@@ -81,8 +82,9 @@ const Header = () => {
     { name: "Home", href: "home", icon: Home },
     { name: "About", href: "about", icon: User },
     { name: "Skills", href: "skills", icon: Code },
-    { name: "Achievements", href: "achievements", icon: Star }, // Fixed: lowercase
+    { name: "Education", href: "education", icon: GraduationCap },
     { name: "Projects", href: "projects", icon: Briefcase },
+    { name: "Achievements", href: "achievements", icon: Star }, // Fixed: lowercase
     { name: "Contact", href: "contact", icon: Mail },
   ];
 
