@@ -90,7 +90,7 @@ const SocialLinks = ({ data }) => {
           href={social.href}
           target={social.href.startsWith("http") ? "_blank" : "_self"}
           rel={social.href.startsWith("http") ? "noopener noreferrer" : ""}
-          className="p-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-gray-700 hover:text-blue-600 hover:bg-white/20 transition-all duration-300"
+          className="p-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-gray-700 hover:text-blue-600 hover:bg-white/20 transition-all duration-300 dark:text-blue-500"
           whileHover={{ scale: 1.1, y: -2 }}
           whileTap={{ scale: 0.95 }}
           initial={{ opacity: 0, y: 20 }}

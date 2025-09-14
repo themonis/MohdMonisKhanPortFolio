@@ -93,7 +93,7 @@ const Achievements = ({ data }) => {
   return (
     <section
       id="achievements"
-      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-indigo-50/50 via-white to-purple-50/50 dark:from-gray-900 dark:via-indigo-900/10 dark:to-purple-900/10 py-20"
+      className="dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-50/50 via-white to-teal-50/50 dark:from-gray-900 dark:via-emerald-900/10 dark:to-teal-900/10 py-20"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

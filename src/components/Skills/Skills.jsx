@@ -95,7 +95,7 @@ const Skills = ({ data }) => {
   return (
     <section
       id="skills"
-      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-blue-50/50 via-white to-purple-50/50 dark:from-gray-900 dark:via-blue-900/10 dark:to-purple-900/10 py-20"
+      className="dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative min-h-screen overflow-hidden bg-gradient-to-br from-blue-50/50 via-white to-purple-50/50 dark:from-gray-900 dark:via-blue-900/10 dark:to-purple-900/10 py-20"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -266,7 +266,7 @@ const Skills = ({ data }) => {
                             ease: "easeInOut",
                           }}
                         />
-                        <span className="font-medium group-hover:text-white transition-colors">
+                        <span className="font-medium group-hover:text-white transition-colors dark:text-gray-300">
                           {skill}
                         </span>
                       </div>
