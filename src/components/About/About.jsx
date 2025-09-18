@@ -63,7 +63,7 @@ const About = ({ data }) => {
 
       // Trigger download
       const link = document.createElement("a");
-      link.href = "/MohdMonisKhanResume.pdf"; // Make sure resume.pdf is in your public folder
+      link.href = "/MohdMonisResume.pdf"; // Make sure resume.pdf is in your public folder
       link.download = "MonisKhanResume.pdf";
       document.body.appendChild(link);
       link.click();
