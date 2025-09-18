@@ -249,7 +249,7 @@ const Hero = ({ data }) => {
           </motion.a>
 
           <motion.a
-            href="/MonisKhanResume.pdf" // Add your resume file to public folder
+            href="/MohdMonisKhanResume.pdf" // Add your resume file to public folder
             download
             className="group px-8 py-4 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center space-x-2"
             whileHover={{ scale: 1.05, y: -2 }}
